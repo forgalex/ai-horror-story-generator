@@ -1,10 +1,17 @@
+NEED PYTHON 3.10
+Then go to https://download.pytorch.org/whl/cpu/torch_stable.html and look up () and download it locally
+
+Create a virtual environment using python 3.10:
+
+
 # Create a virtual environment
-python -m venv venv
+py -3.10 -m venv bark-venv
 
 # Activate it (Windows)
-venv\Scripts\activate
+bark-venv\Scripts\activate
 
 # Then install the dependencies
+pip install "path-to-your-torch-you-downloaded"
 pip install -r requirements.txt
 
 # Generate a script, adjust prompt to what u want
