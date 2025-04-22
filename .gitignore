@@ -1,0 +1,10 @@
+# .gitignore
+venv/
+bark-venv/
+coqui-venv/
+__pycache__/
+*.pyc
+narration/
+voices/*.npz
+*.wav
+.DS_Store
