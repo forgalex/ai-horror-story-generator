@@ -74,6 +74,6 @@ def generate_voice_bark(story_file):
     print(f"[✓] Narration saved as: {output_path}")
 
 if __name__ == "__main__":
-    story_files = glob.glob("stories/*.txt")
+    story_files = glob.glob("output/*.txt")
     latest_story = max(story_files, key=os.path.getmtime)
     generate_voice_bark(latest_story)
