@@ -37,8 +37,8 @@ def generate_voice_bark(story_file):
     print("[Bark] Preloading models...")
     preload_models()
 
-    print("[Bark] Loading Emmett's voice...")
-    voice_data = np.load("voices/Emmett.npz", allow_pickle=True)
+    print("[Bark] Loading voice...")
+    voice_data = np.load("voices/en_speaker_6.npz", allow_pickle=True)
     voice_embedding = {
         "semantic_prompt": voice_data["semantic_prompt"],
         "coarse_prompt": voice_data["coarse_prompt"],
